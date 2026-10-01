@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+if [ ! -f /tmp/db_initialized ]; then
+  ./bin/rails db:create db:migrate db:seed
+  touch /tmp/db_initialized
+fi
+
+exec "${@}"
