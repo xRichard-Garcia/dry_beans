@@ -94,6 +94,8 @@ Representa un viaje específico dentro de una ruta — por ejemplo, el recorrido
 
 
 ## Estructura
+<img width="1301" height="613" alt="dbdesign_screen(1)" src="https://github.com/user-attachments/assets/7f8fb46f-d6a9-4a94-8fd0-65570aae3c22" />
+
 
 - **Route**: ruta de reparto
 - **Trip**: viaje asignado a una ruta (conductor, vehículo, fecha)
