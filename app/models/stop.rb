@@ -5,5 +5,4 @@ class Stop < ApplicationRecord
 
   validates :address, :contact_name, :contact_phone, presence: true
   validates :package_count, numericality: { greater_than: 0 }
-
 end

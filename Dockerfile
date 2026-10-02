@@ -44,6 +44,9 @@ RUN bundle install && \
 # Copy application code
 COPY . .
 
+# Create .env from .env.example
+RUN cp .env.example .env
+
 
 
 # Final stage for app image

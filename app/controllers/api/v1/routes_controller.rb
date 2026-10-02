@@ -1,7 +1,8 @@
-# app/controllers/api/v1/routes_controller.rb
+# frozen_string_literal: true
+
 module Api
   module V1
-    class RoutesController < ApplicationController
+    class RoutesController < Api::BaseController
       def show
         route = Route.includes(trips: :stops).find(params[:id])
 

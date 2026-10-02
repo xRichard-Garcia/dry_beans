@@ -2,7 +2,7 @@
 
 module Api
   module V1
-    class StopsController < ApplicationController
+    class StopsController < Api::BaseController
       def create
         trip = Trip.find(params[:trip_id])
         stop = trip.stops.new(stop_params)
